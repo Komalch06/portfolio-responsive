@@ -1,0 +1,282 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+/*--------------NAVBAR------------*/
+.nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: 400;
+  background-color: rgb(224, 89, 65);
+}
+.nav h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 3px solid blanchedalmond;
+}
+a {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+a:hover {
+  border-bottom: 2px solid blanchedalmond;
+  color: white;
+}
+
+/*--------------About------------*/
+
+.main {
+  background-color: blanchedalmond;
+  height: 500px;
+  display: flex;
+}
+.main section {
+  height: auto;
+  margin: 100px;
+  padding: 10px;
+  align-items: center;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main section h2 {
+  align-items: start;
+  color: tomato;
+}
+.main section button {
+  background-color: white;
+  color: tomato;
+  border: 1px solid tomato;
+  padding: 8px;
+  margin: 8px;
+  font: bolder;
+  border-radius: 7px;
+  align-items: center;
+}
+.main section button:hover {
+  border-bottom: 2px solid blanchedalmond;
+  background-color: rgb(224, 89, 65);
+  color: white;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+/*--------------SKILLS------------*/
+.conatiner {
+  width: 100%;
+  height: auto;
+  background-color: rgb(224, 89, 65);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills section {
+  display: flex;
+  flex-direction: column;
+}
+.skills img {
+  width: 100px;
+  height: 100px;
+}
+.skills button {
+  background-color: white;
+  color: tomato;
+  border: 1px solid tomato;
+  padding: 8px;
+  margin: 8px;
+  font: bolder;
+  border-radius: 7px;
+  align-items: center;
+}
+.skills-part {
+  display: flex;
+  margin-top: 10px;
+}
+
+.skills-part section {
+  display: flex;
+  flex-direction: column;
+}
+.skills-part img {
+  width: 100px;
+  height: 100px;
+}
+.skills-part button {
+  background-color: white;
+  color: tomato;
+  border: 1px solid tomato;
+  padding: 8px;
+  margin: 8px;
+  font: bolder;
+  border-radius: 7px;
+  align-items: center;
+}
+
+/*--------------Project-----------*/
+.project {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 15px;
+}
+
+/*--------------Contact-----------*/
+
+.contact {
+  background-color: tomato;
+  height: auto;
+  padding: 10px;
+}
+
+.contactHeading {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.information {
+  display: flex;
+}
+
+.form {
+  border: 1px solid white;
+  background-color: blanchedalmond;
+  width: 400px;
+  height: 220px;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+}
+.form button {
+  background-color: tomato;
+  color: blanchedalmond;
+  border: 1px solid tomato;
+  padding: 3px;
+  margin: 2px;
+  margin-bottom: 2px;
+  font: bolder;
+  border-radius: 7px;
+}
+
+/*----------------- Media Query-------------------*/
+
+/* Responsive for Tablets & Mobile Screens */
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .nav h2 {
+    font-size: 18px;
+  }
+  .nav section {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  /* About Section */
+  .main {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  .main img {
+    width: 90%;
+    height: auto;
+  }
+  .main section {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  /* Skills Section */
+  .conatiner {
+    height: auto;
+    padding: 20px;
+  }
+  .skills,
+  .skills-part {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills section,
+  .skills-part section {
+    margin-bottom: 10px;
+  }
+  .skills img,
+  .skills-part img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Projects Section */
+  .project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Contact Section */
+  .contactHeading {
+    background-color: blanchedalmond;
+    color: tomato;
+  }
+  .information {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+}
